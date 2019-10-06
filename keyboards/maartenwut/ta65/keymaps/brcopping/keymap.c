@@ -23,3 +23,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, _______, _______, _______, KC_CALC, _______, _______, _______, KC_MUTE, _______, _______, _______,  _______, _______, _______,
   _______, _______, _______,                   _______,                            _______, _______, _______,  _______, _______, _______),
 };
+
+void keyboard_post_init_user()
+{
+  rgblight_disable();
+  rgblight_disable_noeeprom();
+}     
